@@ -11,7 +11,7 @@ This application is a CLI (command-line interface) Reverse Polish Notation calcu
 3. Steps to run the app are just below
 
 
-# How to run
+## How to run
 To run - user will type like so in the terminal 
 ```
 ./index.js <expression>
@@ -37,10 +37,10 @@ I had never heard of Reverse Polish Notation before. So I started by watching vi
 
 
 ## My approach - The CLI
-Building a CLI is another first for me as someone who did not study mathematics or Computer Science. So I took to the internet (go figure!) to find what others have done for creating a CLI with NodeJS. I found this CLI for Node package called "create-node-cli" from Ahmad Awais (https://github.com/ahmadawais/create-node-cli) that I used to help with the cli part of the app. This does not function exactly like a traditional CLI would. But given my lack of abundant time, I feel that it does a solid job of calculating RPN expressions in a similar enough manner to what was outlined. 
+Building a CLI is another first for me. So I took to the internet (go figure!) to find what others have done for creating a CLI with NodeJS. I found this CLI for Node package called "create-node-cli" from Ahmad Awais (https://github.com/ahmadawais/create-node-cli) that I used to help with the cli part of the app. This does not function exactly like a traditional CLI would. But given my lack of abundant time, I feel that it does a solid job of calculating RPN expressions in a similar enough manner to what was outlined. 
 
 
-### Notes for building from here
+## Notes for building from here
 - Needs fix for '*' acting as wildcard.
 - Needs better error handling, especially when evaluating incorrect expressions.
 - Would be great if this app could be refactored to act as a traditional CLI .
@@ -58,7 +58,7 @@ Building a CLI is another first for me as someone who did not study mathematics 
 - More testing for numerous cases would be very useful.
 
 
-### Known issues / bugs
+## Known issues / bugs
 This app needs some work. But I do feel that if given enough time and love, all issues could be worked out. In the meantime, here are some of the known issues as of this writing.
 
 - Regex does not properly catch errors if letters used in expressions, except when a letter is used as the first character of the expression. Could be left alone to evaluate expressions using variables (if that behavior is desireable).
