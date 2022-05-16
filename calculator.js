@@ -16,8 +16,5 @@ function rpnCalculation(expression) {
     }
     return result.pop() || 0;
 }
-console.log(rpnCalculation('3 5 + 2 - 3 * 5 /'));
-let expr = '3 5 + 2 - 3 * 5 /'
-console.log(expr);
 
 module.exports = rpnCalculation;
