@@ -1,4 +1,4 @@
-# CLI_RPN
+# CLI-RPN-Calculator
 Command-line Reverse Polish Notation (RPN) calculator
 
 
