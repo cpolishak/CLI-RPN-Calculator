@@ -18,6 +18,7 @@ const input = cli.input;
 const flags = cli.flags;
 const { clear, debug } = flags;
 
+/* Modify code relating to the user input within this blank function block */
 (async () => {
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
@@ -28,17 +29,9 @@ const { clear, debug } = flags;
 	if(input !== '') {
 		let mathExp = input.join(' ').toString(); 
 		console.log("Your expression was:", mathExp);
-		/* check and see if string starts with any letter and error if so */
-		let myRegex = /^[A-Z]+$/i;
-		let inputHasLetters = myRegex.test(input);
 
-		/* Error if user input starts with any letters */
-		if(inputHasLetters === true) {
-			let msg = "Expressions cannot be evaluated with letters at this time";
-			error(msg);
-		}
 		/* Error if expression is not complete (needs at least 2 operands and an operator) */
-		else if (input.length < 3) {
+		if (input.length < 3) {
 			let msg = "Sorry, at this time you must enter a complete expression. Please try again with a complete expression (i.e. 3 6 +)"
 			error(msg);
 		} else {
