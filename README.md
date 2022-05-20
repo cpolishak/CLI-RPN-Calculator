@@ -12,7 +12,7 @@ This application is a CLI (command-line interface) Reverse Polish Notation calcu
 3. To change the RPN calculations logic, use calculator.js file
 4. To make changes related to the handling of inputs, use index.js file
 5. Changes to the CLI funtions are in the 'utils' directory
-5. Steps to run the app are just below
+6. Steps to run the app are just below
 
 
 ## How to run

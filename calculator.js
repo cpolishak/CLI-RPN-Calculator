@@ -21,12 +21,20 @@ function rpnCalculation(expression) {
             of the stack and using the selected operator before proceeding */
             case '+': result.push(result.pop() + result.pop()); break;
             case '-': result.push(-result.pop() + result.pop()); break;
-            case 'x': result.push(result.pop() * result.pop()); break;
-            case '/': result.push(1 / (result.pop() / result.pop())); break;
+            case 'x': 
+            result.push(result.pop() * result.pop()); 
+            break;
+            case '/': 
+                result.push(1 / (result.pop() / result.pop()));
+                /* handle if division of 0 by a number and still allow rest of expression to be carried out */
+                if(result.pop() === Infinity ) {
+                    result.push(0);
+                } 
+                break;
             default: result.push(parseFloat(items[i]));
         }
     }
-    return result.pop() || 0;
+    return parseFloat(result.pop().toFixed(10)) || 0;
 }
 
 module.exports = rpnCalculation;
